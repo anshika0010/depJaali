@@ -76,7 +76,7 @@ const Header = () => {
             <FontAwesomeIcon icon={faBars} />
           </button>
           <div
-            className="collapse navbar-collapse justify-content-between"
+            className="collapse navbar-collapse justify-content-end"
             id="navbarCollapse"
           >
             

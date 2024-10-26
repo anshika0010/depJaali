@@ -7,6 +7,8 @@ import AboutPage from './Pages/AboutPage';
 import ServicePage2 from './Pages/ServicePage2';
 import ServicePage3 from './Pages/ServicePage3';
 import ServicePage4 from './Pages/ServicePage4';
+import PageUp from './Componants/PageUp';
+import Blog from './Pages/Blog';
 
 
 
@@ -22,7 +24,10 @@ function App() {
     <Route path='/sportnet-services'element={<ServicePage4/>}/>
     <Route path='/contact-us' element={<ContactPage/>}/>
     <Route path='/about-us' element={<AboutPage/>}/>
+    <Route path='/blogs' element={<Blog/>}/>
+   
    </Routes>
+   <PageUp/>
    </BrowserRouter>
   )
 }

@@ -1,4 +1,5 @@
 import React from "react";
+import {Link} from "react-router-dom"
 
 const Blog = () => {
   return (
@@ -104,9 +105,9 @@ const Blog = () => {
         </div>
         {/* Read More Button */}
         <div className="text-end">
-          <a href="/more-blogs" className="btn btn-primary mt-3">
+          <Link to="/blogs" className="btn btn-primary mt-3">
             Read More
-          </a>
+          </Link>
         </div>
       </div>
     </>

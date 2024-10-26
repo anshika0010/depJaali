@@ -1,4 +1,5 @@
 import React from "react";
+import {Link} from "react-router-dom"
 
 const Footer = () => {
   return (
@@ -31,18 +32,18 @@ const Footer = () => {
         +
       </div>
       <div className="social-popup" id="socialPopup">
-        <a href="#" className="social-icon">
+        <Link to="#" className="social-icon">
           <i className="fab fa-facebook-f" />
-        </a>
-        <a href="#" className="social-icon">
+        </Link>
+        <Link to="#" className="social-icon">
           <i className="fab fa-instagram" />
-        </a>
-        <a href="#" className="social-icon">
+        </Link>
+        <Link to="#" className="social-icon">
           <i className="fab fa-twitter" />
-        </a>
-        <a href="#" className="social-icon">
+        </Link>
+        <Link to="#" className="social-icon">
           <i className="fab fa-linkedin-in" />
-        </a>
+        </Link>
       </div>
 
       <footer>
@@ -68,18 +69,18 @@ const Footer = () => {
                     our services
                   </h6>
                   <ul className="newsfeed text-capitalize">
-                    <li>
-                      <a href="#">Invisible Grills</a>
-                    </li>
-                    <li>
-                      <a href="#">Netting Services</a>
-                    </li>
-                    <li>
-                      <a href="#">Spike Servives</a>
-                    </li>
-                    <li>
-                      <a href="#">Sport Nets</a>
-                    </li>
+                  <Link to="/netting-services" className="dropdown-item1">
+                    Nesting Services
+                  </Link>
+                    <Link to="/grill-services" className="dropdown-item1">
+                    Invisible Grills
+                  </Link>
+                  <Link to="/spike-services" className="dropdown-item1">
+                    Spike Services
+                  </Link>
+                    <Link to="/sportnet-services" className="dropdown-item1">
+                    Sport Nets
+                  </Link>
                   </ul>
                 </div>
               </div>
