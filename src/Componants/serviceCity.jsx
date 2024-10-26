@@ -6,7 +6,7 @@ const ServiceCity = () => {
   
   <div className="container-fluid  " style={{marginTop:'80px', marginBottom:'80px'}}>
       <h2 className="text-center">Select Your City for Pest Control Services</h2>
-      <div className="d-flex flex-wrap justify-content-between mt-4 ">
+      <div className="d-flex  justify-content-between mt-4 ">
         <div className=" subconatiner border p-3 flex-fill m-1">
           <h5>Pest Control Services in Popular Cities</h5>
           <p className="hover-underline">Pest Control in Mumbai</p>
