@@ -9,6 +9,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 // } from "@fortawesome/free-brands-svg-icons";
 import { faBars } from "@fortawesome/free-solid-svg-icons";
 import { BiPhone } from "react-icons/bi";
+import {Link} from "react-router-dom"
 
 const Header = () => {
   return (
@@ -80,39 +81,39 @@ const Header = () => {
           >
             
             <div className="navbar-nav">
-              <a href="/" className="nav-item nav-link active">
+              <Link to="/" className="nav-item nav-link active">
                 Home
-              </a>
-              <a href="/about" className="nav-item nav-link">
+              </Link>
+              <Link to="/about-us" className="nav-item nav-link">
                 About
-              </a>
+              </Link>
               <div className="nav-item dropdown">
-                <a
-                  href="#"
+                <Link
+                  to="#"
                   className="nav-link dropdown-toggle"
                   data-bs-toggle="dropdown"
                   aria-expanded="false"
                 >
                   Services
-                </a>
+                </Link>
                 <div className="dropdown-menu fade-up m-0">
-                  <a href="/Service1" className="dropdown-item">
+                  <Link to="/netting-services" className="dropdown-item">
                     Nesting Services
-                  </a>
-                  <a href="/Service2" className="dropdown-item">
+                  </Link>
+                  <Link to="/grill-services" className="dropdown-item">
                     Invisible Grills
-                  </a>
-                  <a href="/Service3" className="dropdown-item">
+                  </Link>
+                  <Link to="/spike-services" className="dropdown-item">
                     Spike Services
-                  </a>
-                  <a href="/Service4" className="dropdown-item">
+                  </Link>
+                  <Link to="/sportnet-services" className="dropdown-item">
                     Sport Nets
-                  </a>
+                  </Link>
                 </div>
               </div>
-              <a href="/contact" className="nav-item nav-link">
+              <Link to="/contact-us" className="nav-item nav-link">
                 Contact
-              </a>
+              </Link>
             </div>
             <div className="mt-4 mt-lg-0 me-lg-n4 py-3 px-4 bg-primary d-flex align-items-center">
               <div>

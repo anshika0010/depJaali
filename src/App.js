@@ -16,12 +16,12 @@ function App() {
    <BrowserRouter>
    <Routes>
     <Route path= '/' element= {<Home/>}/>
-    <Route path='/Service1'element={<ServicePage1/>}/>
-    <Route path='/Service2'element={<ServicePage2/>}/>
-    <Route path='/Service3'element={<ServicePage3/>}/>
-    <Route path='/Service4'element={<ServicePage4/>}/>
-    <Route path='/contact' element={<ContactPage/>}/>
-    <Route path='/about' element={<AboutPage/>}/>
+    <Route path='/netting-services'element={<ServicePage1/>}/>
+    <Route path='/grill-services'element={<ServicePage2/>}/>
+    <Route path='/spike-services'element={<ServicePage3/>}/>
+    <Route path='/sportnet-services'element={<ServicePage4/>}/>
+    <Route path='/contact-us' element={<ContactPage/>}/>
+    <Route path='/about-us' element={<AboutPage/>}/>
    </Routes>
    </BrowserRouter>
   )
