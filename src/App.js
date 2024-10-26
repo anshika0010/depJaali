@@ -22,8 +22,6 @@ function App() {
     <Route path='/Service4'element={<ServicePage4/>}/>
     <Route path='/contact' element={<ContactPage/>}/>
     <Route path='/about' element={<AboutPage/>}/>
-
-
    </Routes>
    </BrowserRouter>
   )
