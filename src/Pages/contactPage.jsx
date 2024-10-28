@@ -127,8 +127,8 @@ const ContactPage = () => {
                     <label htmlFor="message">Address</label>
                   </div>
                 </div>
-                <div className="col-12">
-                  <button className="btn btn-primary w-100 py-3" type="submit">
+                <div className="col-12 ">
+                  <button className="btn btn-primary w-100 py-3" type="submit" >
                     Send Message
                   </button>
                 </div>

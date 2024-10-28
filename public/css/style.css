@@ -1214,6 +1214,7 @@ a:hover{text-decoration:none;}
 .form-horizontal .btn{
     color: #fff;
     background-color: #064c7b;
+    margin-top: 10px;
     font-size: 16px;
     padding: 7px 30px;
     margin: -40 0 10px;

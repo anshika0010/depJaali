@@ -1,7 +1,7 @@
 import React from "react";
 import Header from "../Componants/Header";
 import Footer from "../Componants/Footer";
-
+import Testimonial from "../Componants/Testimonials";
 const blogPosts = [
   { title: "Company news and information on pest control and disinfection", image: "https://www.forbes.com/advisor/wp-content/uploads/2022/06/How_To_Start_A_Blog_-_article_image.jpg" },
   { title: "Company news and information on pest control and disinfection", image: "https://www.forbes.com/advisor/wp-content/uploads/2022/06/How_To_Start_A_Blog_-_article_image.jpg" },
@@ -15,7 +15,7 @@ const BlogList = () => {
     <>
       <Header />
 
-      <section className="blog-section">
+      <section className="blog-section mb-5">
         <div className="container">
           <div className="row">
             <div className="col-lg-8">
@@ -26,7 +26,7 @@ const BlogList = () => {
                   style={{ width: "90%", height: "auto" }}
                 />
               <div className="col-lg-12">
-              <h2>
+              <h2 style={{marginTop:'20px'}}>
                 How Rentokil Customers Benefit from ISO 27001 Certification
               </h2>
               <p>
@@ -87,7 +87,7 @@ const BlogList = () => {
               </article>
             </div>
 
-            <div className="col-lg-4" style={{backgroundColor:'rgb(229, 224, 224)'}} >
+            <div className="col-lg-4" style={{backgroundColor:'rgb(247, 244, 244)'}} >
               <h1 className="text-center mb-4 mt-5">Recent Blog</h1>
               <div className="blog-list">
                 {blogPosts.map((post, index) => (
@@ -98,7 +98,7 @@ const BlogList = () => {
                       className="me-3"
                       style={{ width: "90px", height: "60px" }}
                     />
-                    <h5>{post.title}</h5>
+                    <p style={{fontWeight:'bold', marginTop:'10px',fontSize:'15px'}}>{post.title}</p>
                   </div>
                 ))}
               </div>
@@ -106,7 +106,7 @@ const BlogList = () => {
           </div>
         </div>
       </section>
-
+      <Testimonial/>
       <Footer />
     </>
   );
