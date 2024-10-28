@@ -118,7 +118,6 @@ const Home = () => {
             <div
               className="d-flex align-items-center justify-content-center w-100 h-100"
               style={{ backgroundImage: `url("/img/about-4.webp")` }}
-
             >
               <h1
                 className="display-3 text-white m-0"
@@ -406,7 +405,6 @@ const Home = () => {
                 </div>
                 <div className="col-xl-7 mb-5">
                   <div className="about-customer d-flex position-relative">
-                    
                     <img
                       src="\img\main-logo.png"
                       className="img-fluid btn-xl-square position-absolute"
@@ -414,12 +412,12 @@ const Home = () => {
                         left: 90,
                         top: 0,
                         width: "30%",
-                        marginTop:"10px"
+                        marginTop: "10px",
                         // borderRadius: "50%",
                       }}
                       alt="Image"
                     />
-                 
+
                     <div
                       className="position-absolute text-dark"
                       style={{ left: 220, top: 10 }}
@@ -469,7 +467,9 @@ const Home = () => {
                       </h4>
                     </div>
                     <div className="w-100 d-flex align-items-center justify-content-center">
-                      <p className="mb-0">Years Of Experience</p>
+                      <p className="mb-0" style={{ color: "white" }}>
+                        Years Of Experience
+                      </p>
                     </div>
                   </div>
                 </div>
@@ -538,7 +538,10 @@ const Home = () => {
                   {/* <p className="fs-5 fw-medium mb-2 text-white">Emergency 24/7</p> */}
                   <h3 className="m-0 " style={{ color: "white" }}>
                     +91 9806161974{" "}
-                    <span style={{ fontSize: "1rem" }}> 24/7 Available For inquiry or Services</span>
+                    <span style={{ fontSize: "1rem" }}>
+                      {" "}
+                      24/7 Available For inquiry or Services
+                    </span>
                   </h3>
                 </div>
               </div>
@@ -800,14 +803,12 @@ const Home = () => {
           data-wow-delay="0.1s"
           style={{ marginTop: "-6rem" }}
         >
-          <div className="container" >
-            <div className="row text-center">
-
-            </div>
-            <div className="row justify-content-center" >
+          <div className="container">
+            <div className="row text-center"></div>
+            <div className="row justify-content-center">
               <div className="col-md-offset-3 col-md-8 col-sm-offset-2 col-sm-8">
                 <form className="form-horizontal">
-                  <div className="heading">Sign Up</div>
+                  <div className="heading">Contact Us</div>
                   <div className="form-group">
                     <i className="fa fa-user" />
                     <input
@@ -825,26 +826,49 @@ const Home = () => {
                     />
                   </div>
                   <div className="form-group">
-                    <i className="fa fa-lock" />
-                    <input
-                      className="form-control"
-                      type="password"
-                      placeholder="Password"
-                    />
+                    <li>
+                      <select
+                        className="form-select form-floating select_main"
+                        aria-label="Default select example"
+                      >
+                        <option selected>Netting</option>
+                        <option value={1}>One</option>
+                        <option value={2}>Two</option>
+                        <option value={3}>Three</option>
+                      </select>
+                    </li>
                   </div>
-                  <div className="form-terms">
-                    <input type="checkbox" />
-                    <span>
-                      I agree all statements in{" "}
-                      <a href="">Terms &amp; Conditions</a>
-                    </span>
+                  <div className="form-group">
+                    <div className="form-floating">
+                      <textarea
+                        className="form-control"
+                        placeholder="Leave a message here"
+                        id="message"
+                        style={{ height: 100 }}
+                        defaultValue={""}
+                      />
+                      <label htmlFor="message">Address</label>
+                    </div>
                   </div>
+                  <div className="form-group">
+                    <div className="form-floating">
+                      <textarea
+                        className="form-control"
+                        placeholder="Leave a message here"
+                        id="message"
+                        style={{ height: 100 }}
+                        defaultValue={""}
+                      />
+                      <label htmlFor="message">Requirement</label>
+                    </div>
+                  </div>
+
                   <div className="form-group">
                     <button
                       type="submit"
                       className="btn btn-default text-center"
                     >
-                      Sign Up
+                      Send message
                     </button>
                   </div>
                   <div className="form-footer text-center">
@@ -904,8 +928,8 @@ const Home = () => {
       {/* marquee tag end coding */}
       {/* Team Start */}
 
-      {<Blog/>}
-      {<EventSection/>}
+      {<Blog />}
+      {<EventSection />}
       <div className="container-xxl py-5">
         <div className="container">
           <div className="text-center wow fadeInUp" data-wow-delay="0.1s">
@@ -1105,21 +1129,21 @@ const Home = () => {
       </div>
       {/* Team End */}
       <>
-  <link
-    rel="stylesheet"
-    href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css"
-  />
-  <a
-    href="https://api.whatsapp.com/send?phone=9806161974&text=Hello Sir"
-    className="float"
-    target="_blank"
-  >
-    <i className="fa fa-whatsapp my-float" />
-  </a>
-</>
+        <link
+          rel="stylesheet"
+          href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css"
+        />
+        <a
+          href="https://api.whatsapp.com/send?phone=9806161974&text=Hello Sir"
+          className="float"
+          target="_blank"
+        >
+          <i className="fa fa-whatsapp my-float" />
+        </a>
+      </>
 
       {<Testimonial />}
-      {<ServiceCity/>}
+      {<ServiceCity />}
       {<Footer />}
       {/* modal code html start */}
       <div

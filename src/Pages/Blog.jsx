@@ -1,6 +1,8 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import Header from "../Componants/Header";
 import Footer from "../Componants/Footer";
+import Testimonial from "../Componants/Testimonials";
 
 const Blog = () => {
   return (
@@ -24,7 +26,9 @@ const Blog = () => {
                 className="img-fluid mb-2"
               />
               <h5>Cockroaches</h5>
-              <button className="btn btn-primary mt-2">Read More</button>
+              <Link to="/blogdetail" className="btn btn-primary mt-2">
+                Read More
+              </Link>
             </div>
           </div>
           <div className="col-md-3">
@@ -35,7 +39,9 @@ const Blog = () => {
                 className="img-fluid mb-2"
               />
               <h5>Cockroaches</h5>
-              <button className="btn btn-primary mt-2">Read More</button>
+              <Link to="/blogdetail" className="btn btn-primary mt-2">
+                Read More
+              </Link>
             </div>
           </div>
           <div className="col-md-3">
@@ -46,7 +52,9 @@ const Blog = () => {
                 className="img-fluid mb-2"
               />
               <h5>Cockroaches</h5>
-              <button className="btn btn-primary mt-2">Read More</button>
+              <Link to="/blogdetail" className="btn btn-primary mt-2">
+                Read More
+              </Link>
             </div>
           </div>
           <div className="col-md-3">
@@ -57,7 +65,9 @@ const Blog = () => {
                 className="img-fluid mb-2"
               />
               <h5>Cockroaches</h5>
-              <button className="btn btn-primary mt-2">Read More</button>
+              <Link to="/blogdetail" className="btn btn-primary mt-2">
+                Read More
+              </Link>
             </div>
           </div>
         </div>
@@ -71,7 +81,9 @@ const Blog = () => {
                 className="img-fluid mb-2"
               />
               <h5>Cockroaches</h5>
-              <button className="btn btn-primary mt-2">Read More</button>
+              <Link to="/blogdetail" className="btn btn-primary mt-2">
+                Read More
+              </Link>
             </div>
           </div>
           <div className="col-md-3">
@@ -82,7 +94,9 @@ const Blog = () => {
                 className="img-fluid mb-2"
               />
               <h5>Cockroaches</h5>
-              <button className="btn btn-primary mt-2">Read More</button>
+              <Link to="/blogdetail" className="btn btn-primary mt-2">
+                Read More
+              </Link>
             </div>
           </div>
           <div className="col-md-3">
@@ -93,7 +107,9 @@ const Blog = () => {
                 className="img-fluid mb-2"
               />
               <h5>Cockroaches</h5>
-              <button className="btn btn-primary mt-2">Read More</button>
+              <Link to="/blogdetail" className="btn btn-primary mt-2">
+                Read More
+              </Link>
             </div>
           </div>
           <div className="col-md-3">
@@ -104,31 +120,34 @@ const Blog = () => {
                 className="img-fluid mb-2"
               />
               <h5>Cockroaches</h5>
-              <button className="btn btn-primary mt-2">Read More</button>
+              <Link to="/blogdetail" className="btn btn-primary mt-2">
+                Read More
+              </Link>
             </div>
           </div>
         </div>
       </div>
 
-      <div className="container mt-5">
-        <h2 className="item-center">Recent Articles</h2>
+      <div className="container mt-5 mb-5">
+        <h2 className="text-center mb-4">Recent Blog</h2>
         <div className="d-flex flex-column flex-md-row align-items-center">
           <img
             src="https://images.unsplash.com/photo-1434030216411-0b793f4b4173?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8N3x8YmxvZ3xlbnwwfHwwfHx8MA%3D%3D"
             alt="Placeholder"
-            className="img-fluid mb-3 mb-md-0 me-md-3"
+            className="img-fluid mb-3 mb-md-0 me-md-3 rounded shadow"
             style={{ maxWidth: "500px" }}
           />
           <div>
-            <h5 className="p-4">Recent Articles</h5>
-            <p>
+            <h5 className="fw-bold">Recent Blog</h5>
+            <p className="text-muted">
               This is some text for the first div. It can include information
-              about the image shown on the left.
+              about the image shown on the left, along with insights and
+              reflections related to the topic.
             </p>
           </div>
         </div>
       </div>
-
+      {<Testimonial />}
       {<Footer />}
     </>
   );
