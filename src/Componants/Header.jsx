@@ -111,7 +111,7 @@ const Header = () => {
                   </Link>
                 </div>
               </div>
-              <Link to="/contact-us" className="nav-item nav-link">
+              <Link to="/contactUs" className="nav-item nav-link">
                 Contact
               </Link>
             </div>
